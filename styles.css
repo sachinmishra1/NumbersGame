@@ -78,3 +78,15 @@ body {
 .game-box:hover {
     background-color: #2c3e50; /* Darker button color on hover */
 }
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
