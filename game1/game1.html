@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remember and Type</title>
+  </head>
+  <body>
+    <div class="scoring">
+        <h2>Score: </h2>
+        <h2 class = "score">0</h2>
+    </div>
+    <input type="text" id="ques" name="calc" value="" disabled />
+
+    <!-- NUMBER PAD -->
+    <div class="numpad">
+      <div class="row1">
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="7"
+          onclick="input(value)"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="8"
+          onclick="input(value)"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="9"
+          onclick="input(value)"
+        >
+          9
+        </button>
+      </div>
+      <div class="row2">
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="4"
+          onclick="input(value)"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="5"
+          onclick="input(value)"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="6"
+          onclick="input(value)"
+        >
+          6
+        </button>
+      </div>
+      <div class="row3">
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="1"
+          onclick="input(value)"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="2"
+          onclick="input(value)"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="3"
+          onclick="input(value)"
+        >
+          3
+        </button>
+      </div>
+
+      <div class="row4">
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="C"
+          onclick="clar(value)"
+        >
+          C
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          value="0"
+          onclick="input(value)"
+        >
+          0
+        </button>
+        <button type="button" class="btn btn-dark" onclick="remove()">X</button>
+      </div>
+      <div class="row5">
+        <button type="button" class="btn btn-dark" onclick="solve()">
+          &#8594;
+        </button>
+      </div>
+    </div>
+    <h1 id="ele" style="display: none;">Thanks For Playing with us</h1>
+    <button type="button" id="myButton" class="bttn btn btn-dark" onclick="substitution()" style="display: none;">Restart</button>
+    <button type="button" id="myButton2" class="bttn btn btn-dark" onclick="goToMain()" style="display: none;">Main Menu</button>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

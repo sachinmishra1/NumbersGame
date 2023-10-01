@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Selection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="game-title">Number Games</h1>
+    <!-- Add a tooltip container for each game -->
+    <div class="tooltip">
+        <div class="game-box" id="game1">Game 1: Remember and Type</div>
+        <div class="tooltiptext">Game 1 Rules: Remember the Number appearing on screen and type when given the chance. NOTE: 2 Consecutive wrong answers will make you lose.</div>
+    </div>
+    
+    <div class="tooltip">
+        <div class="game-box" id="game2">Game 2: Remember & Reverse</div>
+        <div class="tooltiptext">Game 2 Rules: Remember the Number appearing on screen and type its Reverse when given the chance. NOTE: 2 Consecutive wrong answers will make you lose.</div>
+    </div>
+    
+    <div class="tooltip">
+        <div class="game-box" id="game3">Game 3: Remember and Sort</div>
+        <div class="tooltiptext">Game 3 Rules: Remember the Number appearing on screen and type its sorted version when given the chance. NOTE: 2 Consecutive wrong answers will make you lose.</div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript code to show/hide tooltips on hover
+        const gameButtons = document.querySelectorAll('.game-box');
+
+        gameButtons.forEach((button) => {
+            button.addEventListener('mouseover', () => {
+                const tooltip = button.nextElementSibling;
+                tooltip.style.visibility = 'visible';
+                tooltip.style.opacity = '1';
+            });
+
+            button.addEventListener('mouseout', () => {
+                const tooltip = button.nextElementSibling;
+                tooltip.style.visibility = 'hidden';
+                tooltip.style.opacity = '0';
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.numpad {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    font-size: 21px;
+    margin: 2px;
+    border: none;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    margin: 2px 0;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoring {
+    font-size: 2px;
+    display: flex;
+    color:#fcefef
+}
+h1 {
+    color:#fcefef
+}
+
+#ques {
+    width: 60%;
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.btn:hover {
+    background-color: #212529;
+}
+
+.blurry-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background to create the blur effect */
+    filter: blur(5px); /* Apply a blur effect to the overlay */
+    z-index: 1; /* Ensure it's on top of other elements */
+}
+
+.green-tick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Initially scaled down */
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    transition: transform 1s; /* Transition the scale over 1 second */
+    z-index: 2;
+}
+.red-cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Initially scaled down */
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    transition: transform 1s; /* Transition the scale over 1 second */
+    z-index: 2;
+}
+
+.bttn{
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    margin: 2px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: #ffffff;
+    cursor: pointer;   
+}
