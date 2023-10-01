@@ -14,122 +14,151 @@
     <title>Remember and Sort</title>
   </head>
   <body>
-    <div class="scoring">
-        <h2>Score: </h2>
-        <h2 class = "score">0</h2>
-    </div>
-    <input type="text" id="ques" name="calc" value="" disabled />
+    <div class="container">
+      <div class="scoring">
+        <h2>Score:</h2>
+        <h2 class="score">0</h2>
+      </div>
+      <input type="text" id="ques" name="calc" value="" disabled />
 
-    <!-- NUMBER PAD -->
-    <div class="numpad">
-      <div class="row1">
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="7"
-          onclick="input(value)"
-        >
-          7
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="8"
-          onclick="input(value)"
-        >
-          8
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="9"
-          onclick="input(value)"
-        >
-          9
-        </button>
-      </div>
-      <div class="row2">
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="4"
-          onclick="input(value)"
-        >
-          4
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="5"
-          onclick="input(value)"
-        >
-          5
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="6"
-          onclick="input(value)"
-        >
-          6
-        </button>
-      </div>
-      <div class="row3">
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="1"
-          onclick="input(value)"
-        >
-          1
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="2"
-          onclick="input(value)"
-        >
-          2
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="3"
-          onclick="input(value)"
-        >
-          3
-        </button>
-      </div>
+      <!-- NUMBER PAD -->
+      <div class="numpad">
+        <div class="row1">
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="7"
+            onclick="input(value)"
+          >
+            7
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="8"
+            onclick="input(value)"
+          >
+            8
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="9"
+            onclick="input(value)"
+          >
+            9
+          </button>
+        </div>
+        <div class="row2">
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="4"
+            onclick="input(value)"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="5"
+            onclick="input(value)"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="6"
+            onclick="input(value)"
+          >
+            6
+          </button>
+        </div>
+        <div class="row3">
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="1"
+            onclick="input(value)"
+          >
+            1
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="2"
+            onclick="input(value)"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="3"
+            onclick="input(value)"
+          >
+            3
+          </button>
+        </div>
 
-      <div class="row4">
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="C"
-          onclick="clar(value)"
-        >
-          C
-        </button>
-        <button
-          type="button"
-          class="btn btn-dark"
-          value="0"
-          onclick="input(value)"
-        >
-          0
-        </button>
-        <button type="button" class="btn btn-dark" onclick="remove()">X</button>
+        <div class="row4">
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="C"
+            onclick="clar(value)"
+          >
+            C
+          </button>
+          <button
+            type="button"
+            class="btn btn-dark"
+            value="0"
+            onclick="input(value)"
+          >
+            0
+          </button>
+          <button type="button" class="btn btn-dark" onclick="remove()">
+            X
+          </button>
+        </div>
+        <div class="row5">
+          <button type="button" class="btn btn-dark" onclick="solve()">
+            &#8594;
+          </button>
+        </div>
       </div>
-      <div class="row5">
-        <button type="button" class="btn btn-dark" onclick="solve()">
-          &#8594;
-        </button>
-      </div>
+      <h1 id="ele" style="display: none">Thanks For Playing with us</h1>
+      <button
+        type="button"
+        id="myButton"
+        class="bttn btn btn-dark"
+        onclick="substitution()"
+        style="display: none"
+      >
+        Restart
+      </button>
+      <button
+        type="button"
+        id="myButton2"
+        class="bttn btn btn-dark"
+        onclick="goToMain()"
+        style="display: none"
+      >
+        Main Menu
+      </button>
     </div>
-    <h1 id="ele" style="display: none;">Thanks For Playing with us</h1>
-    <button type="button" id="myButton" class="bttn btn btn-dark" onclick="substitution()" style="display: none;">Restart</button>
-    <button type="button" id="myButton2" class="bttn btn btn-dark" onclick="goToMain()" style="display: none;">Main Menu</button>
-    
+
+    <footer>
+      <p>
+        Made with ❤️ by
+        <a href="https://github.com/sachinmishra1" style="color: aliceblue"
+          >Sachin Mishra</a
+        >
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

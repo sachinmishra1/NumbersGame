@@ -4,18 +4,28 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
-}
-
-.tooltip {
+    overflow: auto;
+  }
+  
+  .container {
+    background-color: #2c3e50; /* Dark background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+  }
+  
+  .tooltip {
     position: relative;
     display: inline-block;
     cursor: pointer;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
     visibility: hidden;
     width: 40vw;
     background-color: #333;
@@ -30,10 +40,10 @@ body {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.2s;
-}
-
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -42,24 +52,24 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: #333 transparent transparent transparent;
-}
-
-/* Show tooltip on hover */
-.tooltip:hover .tooltiptext {
+  }
+  
+  /* Show tooltip on hover */
+  .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
-}
-
-.game-title {
+  }
+  
+  .game-title {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
     color: #ecf0f1; /* Light text color */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.game-box {
+  }
+  
+  .game-box {
     width: auto; /* Allow buttons to expand based on content */
     height: 60px; /* Uniform button height */
     background-color: #34495e; /* Darker button color */
@@ -73,20 +83,18 @@ body {
     transition: background-color 0.3s ease;
     white-space: nowrap; /* Prevent text from wrapping */
     padding: 0 20px; /* Add some padding for aesthetics */
-}
-
-.game-box:hover {
+  }
+  
+  .game-box:hover {
     background-color: #2c3e50; /* Darker button color on hover */
-}
-
-
-footer {
+  }
+  
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-}
-
-footer p {
-    margin: 0;
-}
+    width: 98vw;
+    height: 6vh;
+  }
+  
