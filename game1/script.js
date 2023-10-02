@@ -16,7 +16,7 @@ function substitution() {
 
 function input(v) {
   document.getElementById("ques").value += v;
-  console.log(document.getElementById("ques").value);
+  // // console.log(document.getElementById("ques").value);
 }
 
 function check() {
@@ -54,15 +54,18 @@ function checkAnswer(ans) {
 async function solve() {
   const ans = check();
   await checkAnswer(ans);
-  console.log(ans);
+  // // console.log(ans);
 
   if (ans) {
     score += document.getElementById("ques").value.length;
     notOk = false;
 
-    console.log(score);
+    // // console.log(score);
     document.getElementsByClassName("score")[0].innerHTML = score;
-    if (cnt == 5) size++;
+    if (cnt == 5) {
+      size++;
+      cnt=0;
+    }
     startAnimation(size);
   } else {
     if (notOk) {
@@ -71,7 +74,7 @@ async function solve() {
       notOk = true;
       cnt = 0;
 
-      console.log(score);
+      // // console.log(score);
       document.getElementsByClassName("score")[0].innerHTML = score;
       if (cnt == 5) size++;
       startAnimation(size);
@@ -93,7 +96,7 @@ async function startAnimation(x) {
   cnt++;
   const numberDisplay = document.getElementById("ques");
   randomNumber = generateRandomNumber(x);
-  console.log("num = ", randomNumber);
+  // // console.log("num = ", randomNumber);
   numberDisplay.value = ".".repeat(x);
   const buttons = document.getElementsByClassName("btn");
   for (let i = 0; i < buttons.length; i++) {
@@ -129,7 +132,7 @@ function animateNumber(element, number, digitIndex) {
         const newValue =
           str.slice(0, digitIndex) + currentDigit + str.slice(digitIndex + 1);
         element.value = newValue;
-        console.log(newValue, digitIndex, currentDigit);
+        // // console.log(newValue, digitIndex, currentDigit);
 
         digitIndex++;
         setTimeout(() => {
